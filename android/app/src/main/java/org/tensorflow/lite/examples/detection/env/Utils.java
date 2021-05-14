@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
+import android.net.Uri;
 import android.os.Environment;
 import android.util.Log;
 
@@ -72,13 +73,13 @@ public class Utils {
 //        return bitmap;
 //    }
 
-    public static Bitmap getBitmapFromAsset(Context context, String filePath) {
+    public static Bitmap getBitmapFromAsset(Context context, String imageUri) {
         AssetManager assetManager = context.getAssets();
 
         InputStream istr;
         Bitmap bitmap = null;
         try {
-            istr = assetManager.open(filePath);
+            istr = assetManager.open(imageUri);
             bitmap = BitmapFactory.decodeStream(istr);
 //            return bitmap.copy(Bitmap.Config.ARGB_8888,true);
         } catch (IOException e) {

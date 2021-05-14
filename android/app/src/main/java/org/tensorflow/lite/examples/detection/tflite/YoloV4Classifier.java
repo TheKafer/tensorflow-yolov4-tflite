@@ -96,7 +96,7 @@ public class YoloV4Classifier implements Classifier {
                     nnApiDelegate = new NnApiDelegate();
                     options.addDelegate(nnApiDelegate);
                     options.setNumThreads(NUM_THREADS);
-                    options.setUseNNAPI(false);
+                    options.setUseNNAPI(true);
                     options.setAllowFp16PrecisionForFp32(true);
                     options.setAllowBufferHandleOutput(true);
                     options.setUseNNAPI(true);
