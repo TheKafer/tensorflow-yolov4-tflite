@@ -39,11 +39,11 @@ Then you store the file `.tflite` on `.\android\app\src\main\assets`.
 
 ### Labels
 
-Edit the file coco.txt on the folder `.\android\app\src\main\assets` and place the name of your classrooms
+Edit the file coco.txt on the folder `.\android\app\src\main\assets` and place the name of your classes.
 
 ### Change the code
 
-In the file `\android\app\src\main\java\org\tensorflow\lite\examples\detection\DetectorActivity.java`, Adapt these lines to your needs
+In the file `\android\app\src\main\java\org\tensorflow\lite\examples\detection\DetectorActivity.java`, Adapt these lines to your needs.
 
 ```
     private static final int TF_OD_API_INPUT_SIZE = 416;
@@ -56,6 +56,32 @@ In the file `\android\app\src\main\java\org\tensorflow\lite\examples\detection\D
     private static final Size DESIRED_PREVIEW_SIZE = new Size(640, 480);
     private static final boolean SAVE_PREVIEW_BITMAP = false;
     private static final float TEXT_SIZE_DIP = 10;
+```
+
+In the file `\android\app\src\main\java\org\tensorflow\lite\examples\detection\MainActivity.java`, Adapt these lines to your needs.
+
+```
+    public static final float MINIMUM_CONFIDENCE_TF_OD_API = 0.4f;
+    public static final int TF_OD_API_INPUT_SIZE = 416;
+    private static final boolean TF_OD_API_IS_QUANTIZED = false;
+    private static final String TF_OD_API_MODEL_FILE = "yolov4-416.tflite";
+    private static final String TF_OD_API_LABELS_FILE = "file:///android_asset/coco.txt";
+```
+
+Adapt this code according to the number of classes you have in the same file. For example we have two classes.
+
+```
+    if (location != null && result.getConfidence() >= MINIMUM_CONFIDENCE_TF_OD_API) {
+        if (result.getDetectedClass() == 0) {
+            paint.setColor(Color.RED);
+            textPaint.setColor(Color.RED);
+        }else{
+             paint.setColor(Color.GREEN);
+             textPaint.setColor(Color.GREEN);
+        }
+        canvas.drawText(result.getConfidence().toString(), location.left,location.top,textPaint);
+        canvas.drawRect(location, paint);
+     }
 ```
 
 
