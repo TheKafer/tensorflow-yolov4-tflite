@@ -17,8 +17,33 @@ If you are practicing you can use our own images or [these](https://github.com/h
 
 ### LabelImg
 
+We recommend you to use  [labelImg](https://github.com/tzutalin/labelImg), this program makes your work much easier. Remember to change the format to yolo and be careful. Since this work is super important for your results.
 
-### Weights
+![Error](/elementsReadme/labelImg.PNG?raw=true "LabelImg")
 
-The first thing you need is the weights of your yolo network, you can either train your own network or download [amazing repository](https://github.com/hunglc007/tensorflow-yolov4-tflite). To train your own model we recommend using the [darknet](https://github.com/hunglc007/tensorflow-yolov4-tflite) environment as it is optimized for it. You can use [ours](https://github.com/hunglc007/tensorflow-yolov4-tflite) where we have already adapted it for ease of use.
+### Darknet 
+
+Darknet is an optimized environment for the yolos network, in which we will generate the weights, you can use our [colab](https://colab.research.google.com/drive/1JQdI5WgmGbz4KBlbcwkUG9Q2fMStuuW1?usp=sharing) since we adapted it for your ease. We recommend you to read more about darknet. It is a bit complex at the beginning.
+
+![Error](/elementsReadme/Darknet.PNG?raw=true "Darknet")
+
+In the cfg folder is the configuration of your network, here you can change the parameters, the number of classes, modify layers, etc. In the img folder are the images for training and validation. Remember to upload the images with their files, you must have the same number of images and their respective files. After training your model, the weights will be saved in the weights folder.
+
+## Implement App
+
+### Weight format
+
+You must change the  `.weights` format to `.tflite`, because tflite is adapted to android. We recommend you to use this [amazing repository](https://github.com/hunglc007/tensorflow-yolov4-tflite)  to change the weights format.
+
+Then you store the file `.tflite` on `.\android\app\src\main\assets`.
+
+### Labels
+
+Edit the file coco.txt on the folder `.\android\app\src\main\assets` and place the name of your classrooms
+
+
+
+
+
+
 
