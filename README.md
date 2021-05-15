@@ -49,9 +49,7 @@ In the file `\android\app\src\main\java\org\tensorflow\lite\examples\detection\D
     private static final int TF_OD_API_INPUT_SIZE = 416;
     private static final boolean TF_OD_API_IS_QUANTIZED = false;
     private static final String TF_OD_API_MODEL_FILE = "yolov4-416.tflite";
-
     private static final String TF_OD_API_LABELS_FILE = "file:///android_asset/coco.txt";
-
     private static final DetectorMode MODE = DetectorMode.TF_OD_API;
     private static final float MINIMUM_CONFIDENCE_TF_OD_API = 0.1f;
     private static final boolean MAINTAIN_ASPECT = false;
