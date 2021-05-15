@@ -45,7 +45,7 @@ Edit the file coco.txt on the folder `.\android\app\src\main\assets` and place t
 
 In the file `\android\app\src\main\java\org\tensorflow\lite\examples\detection\DetectorActivity.java`, Adapt these lines to your needs
 
-`
+```
     private static final int TF_OD_API_INPUT_SIZE = 416;
     private static final boolean TF_OD_API_IS_QUANTIZED = false;
     private static final String TF_OD_API_MODEL_FILE = "yolov4-416.tflite";
@@ -56,7 +56,7 @@ In the file `\android\app\src\main\java\org\tensorflow\lite\examples\detection\D
     private static final Size DESIRED_PREVIEW_SIZE = new Size(640, 480);
     private static final boolean SAVE_PREVIEW_BITMAP = false;
     private static final float TEXT_SIZE_DIP = 10;
-`
+```
 
 
 
