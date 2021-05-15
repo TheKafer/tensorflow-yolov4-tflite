@@ -41,7 +41,24 @@ Then you store the file `.tflite` on `.\android\app\src\main\assets`.
 
 Edit the file coco.txt on the folder `.\android\app\src\main\assets` and place the name of your classrooms
 
+### Change the code
 
+In the file `\android\app\src\main\java\org\tensorflow\lite\examples\detection\DetectorActivity.java`, Adapt these lines to your needs
+
+`
+    private static final int TF_OD_API_INPUT_SIZE = 416;
+    private static final boolean TF_OD_API_IS_QUANTIZED = false;
+    private static final String TF_OD_API_MODEL_FILE = "yolov4-416.tflite";
+
+    private static final String TF_OD_API_LABELS_FILE = "file:///android_asset/coco.txt";
+
+    private static final DetectorMode MODE = DetectorMode.TF_OD_API;
+    private static final float MINIMUM_CONFIDENCE_TF_OD_API = 0.1f;
+    private static final boolean MAINTAIN_ASPECT = false;
+    private static final Size DESIRED_PREVIEW_SIZE = new Size(640, 480);
+    private static final boolean SAVE_PREVIEW_BITMAP = false;
+    private static final float TEXT_SIZE_DIP = 10;
+`
 
 
 
