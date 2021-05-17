@@ -40,7 +40,7 @@ Before implementing the app, test your weights. You can test them on darknet wit
 
 ### Weight format
 
-If you did not generate your own weights you can use [ours]([these](https://drive.google.com/drive/folders/1dng7Noc7oc_QV6boHpCA7SphSLmayY0u?usp=sharing)).
+If you did not generate your own weights you can use [ours](https://drive.google.com/file/d/1IKWV8lDPZaY-JPTZpxOWijrwlQ4MwUDe/view?usp=sharing).
 
 You must change the  `.weights` format to `.tflite`, because tflite is adapted to android. We recommend you to use this [amazing repository](https://github.com/hunglc007/tensorflow-yolov4-tflite)  to change the weights format.
 
