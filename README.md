@@ -16,7 +16,7 @@ This project was made with the objective of having an app for the detection of t
 
 ### Images
 
-If you are practicing you can use our own images or [these](https://github.com/hunglc007/tensorflow-yolov4-tflite), make sure to classify them very well and divide them into folders for cross validation to evaluate your model.
+If you are practicing you can use our own images or [these](https://drive.google.com/drive/folders/1dng7Noc7oc_QV6boHpCA7SphSLmayY0u?usp=sharing), make sure to classify them very well and divide them into folders for cross validation to evaluate your model.
 
 ### LabelImg
 
