@@ -1,5 +1,8 @@
 # YOLO Network APP
 
+<div align="center"><img src="/elementsReadme/galería.jpg" />
+</div>
+
 ## ABOUT
 
 This project is based on [amazing repository](https://github.com/hunglc007/tensorflow-yolov4-tflite), you are free to do whatever you want with this contribution.
@@ -28,6 +31,10 @@ Darknet is an optimized environment for the yolos network, in which we will gene
 ![Error](/elementsReadme/Darknet.PNG?raw=true "Darknet")
 
 In the cfg folder is the configuration of your network, here you can change the parameters, the number of classes, modify layers, etc. In the img folder are the images for training and validation. Remember to upload the images with their files, you must have the same number of images and their respective files. After training your model, the weights will be saved in the weights folder.
+
+Before implementing the app, test your weights. You can test them on darknet with videos or images.
+
+![Error](/elementsReadme/res3.gif?raw=true "Darknet")
 
 ## Implement App
 
@@ -84,7 +91,25 @@ Adapt this code according to the number of classes you have in the same file. Fo
      }
 ```
 
+### Use the app
 
+Enjoy your app, you can use Android Studio for test it. To select images just touch the image.
 
+Examples of predictions with images:
 
+<div align="center"><img src="/elementsReadme/huevo.jpg" />
+</div>
 
+<div align="center"><img src="/elementsReadme/larva.jpg" />
+</div>
+
+<div align="center"><img src="/elementsReadme/larva2.jpg" />
+</div>
+
+Examples of predictions with camera:
+
+<div align="center"><img src="/elementsReadme/videoLarva.jpg" />
+</div>
+
+<div align="center"><img src="/elementsReadme/VideoLarva2.jpg" />
+</div>
