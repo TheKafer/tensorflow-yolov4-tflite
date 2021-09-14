@@ -10,7 +10,7 @@ This project is based on [amazing repository](https://github.com/hunglc007/tenso
 
 ## Motivation
 
-This project was made with the objective of having an app for the detection of the leafminer pest in crops because they affect the production process of flowers in local crops. If you want to know more about our research you can read our [article](https://github.com/hunglc007/tensorflow-yolov4-tflite).
+This project was made with the objective of having an app for the detection of the leafminer pest in crops because they affect the production process of flowers in local crops. If you want to know more about our research you can read our [article](https://1drv.ms/w/s!Annl8YEBlnE9kjkFXi6z1y93YP0R?e=tnHJ9X).
 
 ## Train your own model
 
